@@ -8,7 +8,7 @@ resource "azurerm_monitor_diagnostic_setting" "diagnostics" {
   eventhub_authorization_rule_id = var.eventhub_authorization_rule_id
 
   dynamic "log" {
-    for_each = local.log_category_types
+    for_each = local.log_category_groups != [] ? null : local.log_category_types
 
     content {
       category = log.value
