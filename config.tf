@@ -4,7 +4,7 @@ variable "name" {
 
 variable "subscription_id" {
   type    = string
-  default = null
+  default = ""
 }
 
 variable "target_resource_id" {
