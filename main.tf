@@ -5,7 +5,7 @@ module "log_categories_module" {
     resource = var.target_resource_id
   }
 
-  resource_id = each.value["resource"]
+  resource_id = each.value
 }
 
 resource "azurerm_monitor_diagnostic_setting" "diagnostics" {
