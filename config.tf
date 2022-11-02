@@ -2,8 +2,14 @@ variable "name" {
   type = string
 }
 
+variable "subscription_id" {
+  type    = string
+  default = ""
+}
+
 variable "target_resource_id" {
-  type = string
+  type    = string
+  default = ""
 }
 
 variable "storage_account_id" {

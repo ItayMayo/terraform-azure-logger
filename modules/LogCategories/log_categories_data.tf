@@ -1,3 +1,3 @@
 data "azurerm_monitor_diagnostic_categories" "diagnostic_categories" {
-  resource_id = var.target_resource_id
+  resource_id = var.resource_id
 }
