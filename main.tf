@@ -1,7 +1,7 @@
 module "log_categories_module" {
   source = "./modules/LogCategories"
 
-  for_each = var.subscription_id != null ? {} : {
+  for_each = local.subscription_id_provided ? {} : {
     resource = var.target_resource_id
   }
 
