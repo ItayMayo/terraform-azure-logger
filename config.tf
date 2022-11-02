@@ -4,12 +4,12 @@ variable "name" {
 
 variable "subscription_id" {
   type    = string
-  default = ""
+  default = null
 }
 
 variable "target_resource_id" {
   type    = string
-  default = ""
+  default = null
 }
 
 variable "storage_account_id" {
